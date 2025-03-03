@@ -11,6 +11,7 @@ function randomNumber (min , max){
 
 function createButton (n){
   const createButton = document.createElement("button")
+  createButton.classList.add("mainButton")
   formButton.appendChild(createButton)
   createButton.innerHTML = n
   
