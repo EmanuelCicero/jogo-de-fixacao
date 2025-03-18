@@ -21,7 +21,7 @@ section{
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: calc(100dvh - 45px);
   overflow: hidden;
 }
 
@@ -73,7 +73,7 @@ section{
   gap: 10px;
 }
 
-.inputMinMax label{
+.inputMinMax p{
   font-size: 18px;
 }
 
@@ -138,67 +138,39 @@ section{
   font-weight: bold
 }
 
-.cloud{
+.clouds div{
   position: absolute;
+}
+
+.clouds div:nth-child(2n + 1) img{
+  width: 200px;
+}
+
+.clouds div:nth-child(1){
   top: 5%;
   left: 15%;
   animation: movementY 5s ease-in-out infinite alternate;
-
-  width: 200px;
 }
 
-.cloud1{
-  position: absolute;
-  top: 35%;
-  left: -3%;
-  animation: movementX 5s ease-in-out infinite alternate;
-}
-
-.cloud2{
-  position: absolute;
-  top: 45%;
-  left: 85%;
-  animation: movementX 5s ease-in-out infinite alternate;
-  width: 200px;
-}
-
-.cloud3{
-  position: absolute;
-  top: 5%;
-  left: 70%;
-  animation: movementX 5s ease-in-out infinite alternate;
-}
-
-.cloud4{
-  position: absolute;
-  top: 75%;
-  left: 25%;
-  animation: movementY 5s ease-in-out infinite alternate;
-}
-.cloud5{
-  position: absolute;
-  top: 63%;
-  left: 69%;
-  width: 200px;
-  animation: movementY 5s ease-in-out infinite alternate;
-}
+.clouds div:nth-child(2){top: 35%; left: -3%; animation: movementX 5s ease-in-out infinite alternate;}
+.clouds div:nth-child(3){ top: 45%; left: 85%; animation: movementX 5s ease-in-out infinite alternate; width: 200px;}
+.clouds div:nth-child(4){top: 5%; left: 70%;animation: movementX 5s ease-in-out infinite alternate;}
+.clouds div:nth-child(5){top: 75%; left: 25%; animation: movementY 5s ease-in-out infinite alternate;}
+.clouds div:nth-child(6){top: 63%; left: 69%; width: 200px; animation: movementY 5s ease-in-out infinite alternate;}
 
 @keyframes movementX {
-  0% {
-      transform: translateX(10px);
-  }
-  100% {
-      transform: translateX(20px);
-  }
+  0% {transform: translateX(10px);}
+  100% {transform: translateX(20px);}
 }
 
 @keyframes movementY {
-  0% {
-      transform: translateY(0px);
-  }
-  100% {
-      transform: translateY(5px);
-  }
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(5px);}
+}
+
+.container-order-btn{
+  display: flex;
+  gap: 20px;
 }
 
 @media screen and (max-width: 780px) { 
@@ -222,41 +194,11 @@ section{
     background-color: var(--purple);
   }
 
-  .cloud{
-    position: absolute;
-    top: -3%;
-    left: 15%;
-    animation: movementY 5s ease-in-out infinite alternate;
-  
-    width: 200px;
-  }
-  
-  .cloud1{
-    position: absolute;
-    top: 75%;
-    left: -35%;
-    animation: movementX 5s ease-in-out infinite alternate;
-  }
-  
-  .cloud2{
-    position: absolute;
-    top: 35%;
-    left: -25%;
-    animation: movementX 5s ease-in-out infinite alternate;
-    width: 200px;
-  }
-  
-  .cloud3{
-    position: absolute;
-    top: 48%;
-    left: 70%;
-    animation: movementY 5s ease-in-out infinite alternate;
-  }
+  .clouds div:nth-child(1){top: -3%; left: 15%; animation: movementY 5s ease-in-out infinite alternate;}
+  .clouds div:nth-child(2){top: 75%; left: -35%; animation: movementX 5s ease-in-out infinite alternate;}
+  .clouds div:nth-child(3){top: 35%; left: -25%; animation: movementX 5s ease-in-out infinite alternat }
+  .clouds div:nth-child(4){ top: 48%; left: 70%; animation: movementY 5s ease-in-out infinite alternat}
 
-  .cloud4{
-    display: none;
-  }
-  .cloud5{
-    display: none;
-  }
+  .clouds div:nth-child(5){display: none;}
+  .clouds div:nth-child(6){display: none;}
 }

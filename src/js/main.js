@@ -1,6 +1,10 @@
-const startButton = document.querySelector(".startButton")
+const startRandom = document.querySelector("#startRandom")
+const startInOrder = document.querySelector("#startInOrder")
 const numberMin = document.querySelector("#numberMin")
 const numberMax = document.querySelector("#numberMax")
+const btnBack =  document.querySelector(".btn-back")
+
+
 
 let valueMin;
 let valueMax;
@@ -12,13 +16,21 @@ function addMinMax() {
   valueMin = Number(min.value)
   valueMax = Number(max.value)
 
-  verifyNumber()
-
   localStorage.setItem("valueMax", valueMax)
   localStorage.setItem("valueMin", valueMin)
 }
 
-startButton.addEventListener("click", addMinMax)
+startRandom.addEventListener("click", () => {
+  localStorage.setItem("fuctionInOrder", "numbersRandom")
+  addMinMax()
+  verifyNumber()
+})
+
+startInOrder.addEventListener("click", () => {
+  localStorage.setItem("fuctionInOrder", "numbersInOrder")
+  addMinMax()
+  verifyNumber()
+})
 
 function verifyNumber(){
   if((valueMax - valueMin) > 2){
@@ -28,24 +40,6 @@ function verifyNumber(){
   }
 }
 
-const verifyKeyPress = (el) => {
-  if(el.keyCode === 13){
-    addMinMax()
-  }
-}
-
-
-document.addEventListener("click", function(e){
-  const el = e.target
-  if (el.type === "number"){
-    el.value = ""
-  }
-})
-
-numberMax.addEventListener("keypress", (el) => {
-  verifyKeyPress(el)
-})
-
-numberMin.addEventListener("keypress", (el) => {
-  verifyKeyPress(el)
+btnBack.addEventListener("click", () => {
+  window.location.href = "index.html"
 })

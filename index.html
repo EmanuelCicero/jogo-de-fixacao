@@ -3,45 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/index.css">
   <title>Jogo de Fixação</title>
 </head>
 <body>
-  <section>
-      <div>
-        <img src="src/image/cloud.svg" alt="Nuvem" class="cloud">
-      </div>
-      <div>
-        <img src="src/image/cloud.svg" alt="Nuvem" class="cloud1">
-      </div>
-      <div>
-        <img src="src/image/cloud.svg" alt="Nuvem" class="cloud2">
-      </div>
-      <div>
-        <img src="src/image/cloud.svg" alt="Nuvem" class="cloud3">
-      </div>
-      <div>
-        <img src="src/image/cloud.svg" alt="Nuvem" class="cloud4">
-      </div>
-      <div>
-        <img src="src/image/cloud.svg" alt="Nuvem" class="cloud5">
-      </div>
-    <div class="container">
-      <h1 class="title">Jogo de Fixação dos Números</h1>
-      <p class="description">Defina um número mínimo e um máximo que deve aparecer</p>
-      <div class="setNumber">
-        <div class="inputMinMax">
-          <label for="">Número mínimo:</label>
-          <input type="number" name="min" id="numberMin" value="0">
-        </div>
-        <div class="inputMinMax">
-          <label for="">Número máximo:</label>
-          <input type="number" name="max" id="numberMax" value="0">
-        </div>
-        <button class="startButton mainButton">Começar</button>
-      </div>
-    </div> 
+  <section class="container">
+    <h1 class="title">Jogo de Fixação</h1>
+    <p>Selecione o que você quer trabalhar</p>
+    
+    <button class="btn-options btnOptionsLyrics">
+      <div class="cloudButtomLyrics">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> 
+      <img src="src/image/books.svg" alt="Livros" class="bottom-position">
+      Letras
+      <img src="src/image/abc.svg" alt="Letras ABC" class="top-position">
+    </button>
+
+
+    <button class="btn-options btnOptionsNumbers">
+      <div class="cloudButtomNumbers">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> 
+      <img src="src/image/numbers.svg" alt="Números 123" class="top-position">
+      Números
+      <img src="src/image/apples.svg" alt="Maçãs" class="bottom-position">
+    </button>
+
+    <script src="src/js/screenMain.js"></script>
   </section>
-  <script src="src/js/main.js"></script>
 </body>
 </html>
