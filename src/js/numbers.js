@@ -1,4 +1,4 @@
-const displayNumber = document.querySelector(".diplayName")
+const displayNumber = document.querySelector(".displayName")
 const formButton = document.querySelector("#formButton")
 const btnBack =  document.querySelector(".btn-back")
 

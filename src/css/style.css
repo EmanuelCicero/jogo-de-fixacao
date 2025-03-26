@@ -51,7 +51,7 @@ section{
   font-size: 18px;
 }
 
-.diplayName{
+.displayName{
   font-size: 100px;
   text-align: center;
 
@@ -174,7 +174,7 @@ section{
 }
 
 @media screen and (max-width: 780px) { 
-  .diplayName{
+  .displayName{
     font-size: 140px;
   }
 
