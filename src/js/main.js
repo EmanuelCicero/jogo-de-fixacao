@@ -4,8 +4,6 @@ const numberMin = document.querySelector("#numberMin")
 const numberMax = document.querySelector("#numberMax")
 const btnBack =  document.querySelector(".btn-back")
 
-
-
 let valueMin;
 let valueMax;
 
@@ -21,13 +19,13 @@ function addMinMax() {
 }
 
 startRandom.addEventListener("click", () => {
-  localStorage.setItem("fuctionInOrder", "numbersRandom")
+  localStorage.setItem("functionInOrder", "numbersRandom")
   addMinMax()
   verifyNumber()
 })
 
 startInOrder.addEventListener("click", () => {
-  localStorage.setItem("fuctionInOrder", "numbersInOrder")
+  localStorage.setItem("functionInOrder", "numbersInOrder")
   addMinMax()
   verifyNumber()
 })

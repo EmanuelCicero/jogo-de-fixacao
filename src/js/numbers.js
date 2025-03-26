@@ -134,7 +134,7 @@ btnBack.addEventListener("click", () => {
   window.location.href = "configNumber.html"
 })
 
-if (localStorage.getItem("fuctionInOrder") === "numbersInOrder"){
+if (localStorage.getItem("functionInOrder") === "numbersInOrder"){
   numbersInOrder()
 }else(
   numbersRandom()

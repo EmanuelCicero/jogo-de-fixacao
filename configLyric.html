@@ -3,9 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link type="image/png" sizes="96x96" rel="icon" href="src/image/favicon.png">
+  <title>Jogo de Fixação</title>
 </head>
 <body>
-  <h1>Em desemvolvimento</h1>
+  <button class="btn-back mainButton"> < Voltar</button>
+  <section>
+    <div class="clouds">
+      <div><img src="src/image/cloud.svg" alt="Nuvem"></div>
+      <div><img src="src/image/cloud.svg" alt="Nuvem"></div>
+      <div><img src="src/image/cloud.svg" alt="Nuvem"></div>
+      <div><img src="src/image/cloud.svg" alt="Nuvem"></div>
+      <div><img src="src/image/cloud.svg" alt="Nuvem"></div>
+      <div><img src="src/image/cloud.svg" alt="Nuvem"></div>
+    </div>
+    <div class="container">
+      <h1 class="title">Jogo de Fixação dos Letras</h1>
+      <p class="description"></p>
+      <div class="setNumber">
+        <div class="inputMinMax">
+          <p>Vogais</p> 
+          <div class="container-order-btn">
+            <button class="startButton mainButton" id="startInOrderVowels"> Em ordem </button>
+            <button class="startButton mainButton" id="startRandomVowels"> Ordem aleatória </button>
+          </div>
+        </div>
+        <div class="inputMinMax">
+          <p>Alfabeto completo</p>
+          <div class="container-order-btn">
+            <button class="startButton mainButton" id="startInOrderAlphabet"> Em ordem </button>
+            <button class="startButton mainButton" id="startRandomAlphabet"> Ordem aleatória </button>
+          </div>
+        </div>
+
+      </div>
+    </div> 
+  </section>
+  <script type="module" src="src/js/redirectLyric.js"></script>
 </body>
 </html>
