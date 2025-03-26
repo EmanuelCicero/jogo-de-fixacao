@@ -1,4 +1,4 @@
-const displayLetter = document.querySelector(".diplayName")
+const displayLetter = document.querySelector(".displayName")
 const formButton = document.querySelector("#formButton")
 const btnBack =  document.querySelector(".btn-back")
 
