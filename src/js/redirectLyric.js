@@ -4,26 +4,24 @@ const startInOrderAlphabet = document.querySelector("#startInOrderAlphabet")
 const startRandomAlphabet = document.querySelector("#startRandomAlphabet")
 const btnBack =  document.querySelector(".btn-back")
 
-
-
 startInOrderVowels.addEventListener("click", () => {
-  localStorage.setItem("functionLyrics", "vowelsInOrder")
   window.location.href = "pageLyric.html"
+  localStorage.setItem("functionLyrics", "vowelsInOrder")
 })
 
 startRandomVowels.addEventListener("click", () => {
+  window.location.href = "pageLyric.html"
   localStorage.setItem("functionLyrics", "vowelsRandom")
-  window.location.href =  "pageLyric.html"
 })
 
 startInOrderAlphabet.addEventListener("click", () => {
+  window.location.href = "pageLyric.html"
   localStorage.setItem("functionLyrics", "alphabetInOrder")
-  window.location.href =  "pageLyric.html"
 })
 
 startRandomAlphabet.addEventListener("click", () => {
+  window.location.href = "pageLyric.html"
   localStorage.setItem("functionLyrics", "alphabetRandom")
-  window.location.href =  "pageLyric.html"
 })
 
 btnBack.addEventListener("click", () => {
